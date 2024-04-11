@@ -1,0 +1,181 @@
+@media screen and ( max-width: 520px ) {
+
+.first-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 20px;
+    .description{
+        color: white;
+        line-height: 10px;
+        margin-top: 15px;
+        h3{
+            line-height: 30px;
+            color: rgb(245, 220, 0);
+        }
+    }
+}
+.divide{
+    hr{
+        width: 80%;
+        border: #9c9b9b solid 1px;
+    }
+}
+
+.second-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    .description{
+        color: white;
+        line-height: 25px;
+        margin-top: 15px;
+        h2{
+            width: 140px;
+        }
+        p{
+            line-height: 5px;
+        }
+        h3{
+            line-height: 20px;
+            color: rgb(245, 220, 0);
+        }
+    }
+    .image2{
+        margin-top: 20px;
+    }
+    }
+    .third-group{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+        .description{
+            color: white;
+            line-height: 25px;
+            margin-top: 15px;
+            h2{
+                width: 140px;
+            }
+            p{
+                line-height: 5px;
+            }
+            h3{
+                line-height: 20px;
+                color: rgb(245, 220, 0);
+            }
+        }
+        .image3{
+            margin-top: 20px;
+        }
+        }
+        .fourth-group{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            .description{
+                color: white;
+                line-height: 25px;
+                margin-top: 15px;
+                h2{
+                    width: 140px;
+                }
+                p{
+                    line-height: 5px;
+                }
+                h3{
+                    line-height: 20px;
+                    color: rgb(245, 220, 0);
+                }
+            }
+            }
+            .fifth-group{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                
+                .description{
+                    color: white;
+                    line-height: 25px;
+                    margin-top: 15px;
+                    p{
+                        line-height: 5px;
+                    }
+                    h3{
+                        line-height: 20px;
+                        color: rgb(245, 220, 0);
+                    }
+                }
+                }
+                .form-container{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+                }
+
+                .form-text {
+                    margin-top: 70px;
+                    h5 {
+                      color: #ffffff;
+                      width: 300px;
+                      margin: auto;
+                      text-align: center;
+                    }
+                  }
+                  input {
+                    width: 270px;
+                    height: 35px;
+                    background-color: transparent;
+                    border: 1px solid #beb8b8;
+                    margin-top: 20px;
+                    color: #ffffff;
+                  }
+                  input::placeholder {
+                    padding-left: 10px;
+                  }
+                
+                  textarea {
+                    width: 270px;
+                    height: 70px;
+                    background-color: transparent;
+                    border: 1px solid #beb8b8;
+                    margin-top: 20px;
+                    color: #ffffff;
+                  }
+                  .success-message{
+                
+                    P{
+                      color: #ffffff;
+                      text-align: center;
+                      font-size: 13px;
+                      margin: 30px auto;
+                    }
+                    }
+                    .send{
+                        padding: 10px 20px;
+                        background-color: #d3a526;
+                        border: none;
+                        border-radius: 10px;
+                        color: #ffffff;
+                        cursor: pointer;
+                        left: 50%;
+                        transform: translate(-50%);
+                        position: relative;
+                        margin-top: 20px;
+                        transition: background-color 0.5s ease-in-out;
+                      }
+                      button:hover {
+                        background-color: #0a0a0a;
+                        color: #ffd30e;
+                        border: 1px solid #ffffff;
+                      }
+                    }
+                    .feedback {
+                      p {
+                        color: #ffd30e;
+                        font-size: 13px;
+                        margin-top: 5px;
+                      }
+                    
+}
