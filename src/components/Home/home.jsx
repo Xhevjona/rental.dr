@@ -129,13 +129,13 @@ const Home = () => {
       <div className="fifth-group">
         <div className="description">
           <h2>
-            Volkswagen Passat <br /> Premium Plus <br /> 2013
+            Volkswagen <br /> Passat Premium <br /> 2013
           </h2>
           <p>2.5 Automatic</p>
           <h3>60€/Day</h3>
         </div>
         <div className="image5">
-          <img src={Passat} width={260} height={200} />
+          <img src={Passat} width={250} height={190} />
         </div>
       </div>
       <div className="form-text">
