@@ -1,106 +1,106 @@
-
 .responsive-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    border-bottom: 1px solid #cecccc;
-    color: #fff;
-    padding: 5px 20px;
-  }
-  
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 150px;
-  }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: 1px solid #cecccc;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Hide by default for larger screens */
+}
+
+.navbar-toggler.open .navbar-toggler-icon:nth-child(2) {
+  display: none;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  display: block;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav.open {
+  display: block;
+  position: absolute;
+  top: 50px; /* Adjust this according to your navbar height */
+  right: 0;
+  background-color: transparent;
+  width: 100%;
+  text-align: start;
+  z-index: 1;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
   .navbar-toggler {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none; /* Hide by default for larger screens */
+    display: block; /* Show for smaller screens */
   }
-  
-  .navbar-toggler.open .navbar-toggler-icon:nth-child(2) {
-    display: none;
-  }
-  
-  .navbar-toggler-icon {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    display: block;
-  }
-  
   .navbar-nav {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-nav.open {
-    display: block;
+    display: none; /* Hide by default for smaller screens */
+    flex-direction: column;
     position: absolute;
-    top: 50px; /* Adjust this according to your navbar height */
+    top: 60px; /* Adjust this according to your navbar height */
     right: 0;
     background-color: transparent;
     width: 100%;
-    text-align:start;
-    z-index: 1;
+    text-align: start;
   }
-  
   .nav-item {
-    margin: 0 10px;
+    margin: 10px 0;
   }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  @media (max-width: 520px) {
-    .navbar-toggler {
-      display: block; /* Show for smaller screens */
-    }
-    .navbar-nav {
-      display: none; /* Hide by default for smaller screens */
-      flex-direction: column;
-      position: absolute;
-      top: 60px; /* Adjust this according to your navbar height */
-      right: 0;
-      background-color: transparent;
-      width: 100%;
-      text-align: start;
-    }
-    .nav-item {
-      margin: 10px 0;
-    }
-  
-    .navbar-nav.open {
-      display: block;
-      line-height: 30px;
-      font-size: 17px;
-      height: 100px;
-      background-color:transparent;
-      a{
-        padding-left: 30px;
-        color: #d3d3d3;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: 600;
-        text-decoration: underline;
-        text-decoration-color: #e7c500;
-        text-decoration-thickness: 1px; // underline thickness
-        -moz-text-decoration-color: #0000ff;
-        text-underline-offset: 15px; // height of underline from text
-      }
+
+  .navbar-nav.open {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    line-height: 17px;
+    font-size: 17px;
+    height: 100px;
+    background-color: transparent;
+    a {
+      color: #d3d3d3;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: #e7c500;
+      text-decoration-thickness: 1px; // underline thickness
+      -moz-text-decoration-color: #0000ff;
+      text-underline-offset: 15px; // height of underline from text
     }
   }
+}

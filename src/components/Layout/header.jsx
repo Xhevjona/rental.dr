@@ -19,9 +19,9 @@ const Header = () => {
           <div className="logo"><h3> Rental.Dr </h3></div>
         </div>
         <ul className={isOpen ? "navbar-nav open" : "navbar-nav"}>
-          <li className="nav-item"><a href="#home" className="nav-link">Home</a></li>
-          <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
-          <li className="nav-item"><a href="#contact" className="nav-link">Contact</a></li>
+          <li className="nav-item"><a href="/" className="nav-link">Home</a></li>
+          <li className="nav-item"><a href="/about" className="nav-link">About</a></li>
+          <li className="nav-item"><a href="/contact" className="nav-link">Contact</a></li>
         </ul>
       </nav>
     );
