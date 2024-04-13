@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+    border-bottom: 1px solid #cecccc;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
   
   .navbar-brand {
@@ -95,6 +96,11 @@
         cursor: pointer;
         font-size: 18px;
         font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: #e7c500;
+        text-decoration-thickness: 1px; // underline thickness
+        -moz-text-decoration-color: #0000ff;
+        text-underline-offset: 15px; // height of underline from text
       }
     }
   }
