@@ -13,7 +13,7 @@ AOS.init({
   delay: 200,
   easing: 'ease-in-out',
   mirror: false,
-  once: true,
+  once: true, 
 });
 
 const Home = () => {
