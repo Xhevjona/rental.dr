@@ -1,17 +1,31 @@
-
-.about1{
-    h2{
-        text-align: center;
-        color: #ffc421;
-        margin-top: 120px;
-        margin-bottom: 20px;
+.background{
+    background-image: url("../Image/about.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(80%);
+    h2 {
+      color: #ffffff;
+      text-align: center;
     }
+}
+@media  screen and ( max-width: 520px ) {
+
+.background{
+    height: 300px;
+}
+.about1{
     
     p{
         text-align: center;
         color: #fff;
         width: 80%;
-        margin: auto;
+        margin: 40px auto;
     }
 }
 .about2{
@@ -46,4 +60,5 @@
         width: 80%;
         margin: auto;
     }
+}
 }

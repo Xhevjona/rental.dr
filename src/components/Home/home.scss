@@ -3,7 +3,7 @@
 .first-group{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 130px;
     .description{
         color: white;
         line-height: 10px;
@@ -96,14 +96,13 @@
                     color: white;
                     margin-top: 15px;
                     padding-left: 20px;
-
                     h3{
                         line-height: 25px;
                         color: rgb(245, 220, 0);
                     }
                 } 
                 .image5{
-                   margin-left: -40px;
+                   margin-left: -60px;
                 }
                 }
                 .form-container{
@@ -165,7 +164,7 @@
                       }
                       button:hover {
                         background-color: #0a0a0a;
-                        color: #ffd30e;
+                        color: #eeca00;
                         border: 1px solid #ffffff;
                       }
                     }

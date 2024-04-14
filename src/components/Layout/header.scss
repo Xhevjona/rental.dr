@@ -40,7 +40,7 @@
 }
 
 .nav-logo {
-  color:#dd9000;
+  color:#eeca00;
   ;
   align-items: center;
   margin-left: 50px;
@@ -84,12 +84,12 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #dd9000;
+  background: #eeca00;
 }
 
 .nav-item.active {
-  color: #dd9000;
-  border: 1px solid #dd9000;
+  color: #eeca00;
+  border: 1px solid #eeca00;
 }
 
 .nav-icon {
@@ -191,7 +191,7 @@
     z-index: 1;
   }
   .nav-item .active {
-    color: #dd9000;
+    color: #eeca00;
     border: none;
   }
   .nav-links {
@@ -208,7 +208,7 @@
     transform: translate(-100%, 30%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #dd9000;
+    color: #eeca00;
   }
   .dropdown {
     float: left;
@@ -279,7 +279,7 @@
     transform: translate(-50%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #dd9000;
+    color: #eeca00;
   }
   .nav-item {
     line-height: 20px;

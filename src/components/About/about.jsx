@@ -3,9 +3,11 @@ import "../About/about.scss";
 
 const about = () => {
   return (
-    <div>
-      <div className="about1">
+    <div> 
+      <div className="background">
       <h2>Welcome to Rental.Dr</h2>
+      </div>
+      <div className="about1">
       <p>
         At Rental.Dr, we believe in making your travel experience as seamless
         and enjoyable as possible. Whether you're embarking on a business trip,

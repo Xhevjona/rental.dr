@@ -5,6 +5,16 @@ import Golf from "../Image/golf6.png";
 import Jetta from "../Image/jetta.png";
 import Passat from "../Image/passat.png";
 import emailjs from "@emailjs/browser";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
+AOS.init({
+  duration: 1000,
+  delay: 200,
+  easing: 'ease-in-out',
+  mirror: false,
+  once: true,
+});
 
 const Home = () => {
   const form = useRef();
@@ -73,12 +83,12 @@ const Home = () => {
   return (
     <div>
       <div className="first-group">
-        <div className="description">
+        <div className="description"  data-aos="fade-right">
           <h2>Audi A3 2007</h2>
           <p>1.9 Manual</p>
           <h3>35€/Day</h3>
         </div>
-        <div className="image1">
+        <div className="image1" data-aos="fade-left">
           <img src={Audi} width={190} height={135} />
         </div>
       </div>
@@ -87,12 +97,12 @@ const Home = () => {
       </div>
 
       <div className="second-group">
-        <div className="description">
+        <div className="description" data-aos="fade-right">
           <h2>Volkswagen Golf VI 2009</h2>
           <p>1.6 Manual</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image2">
+        <div className="image2" data-aos="fade-left">
           <img src={Golf} width={190} height={120} />
         </div>
       </div>
@@ -101,12 +111,12 @@ const Home = () => {
       </div>
 
       <div className="third-group">
-        <div className="description">
+        <div className="description" data-aos="fade-right">
           <h2>Volkswagen Golf VI 2009</h2>
           <p>2.0 Manual</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image3">
+        <div className="image3" data-aos="fade-left">
           <img src={Golf} width={190} height={120} />
         </div>
       </div>
@@ -114,12 +124,12 @@ const Home = () => {
         <hr />
       </div>
       <div className="fourth-group">
-        <div className="description">
+        <div className="description" data-aos="fade-right">
           <h2>Volkswagen Jetta 2010</h2>
           <p>2.5 Automatic</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image4">
+        <div className="image4" data-aos="fade-left">
           <img src={Jetta} width={220} height={140} />
         </div>
       </div>
@@ -127,14 +137,14 @@ const Home = () => {
         <hr />
       </div>
       <div className="fifth-group">
-        <div className="description">
+        <div className="description" data-aos="fade-right">
           <h2>
             Volkswagen <br /> Passat Premium <br /> 2013
           </h2>
           <p>2.5 Automatic</p>
           <h3>60€/Day</h3>
         </div>
-        <div className="image5">
+        <div className="image5" data-aos="fade-left">
           <img src={Passat} width={230} height={190} />
         </div>
       </div>

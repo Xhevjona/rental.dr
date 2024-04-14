@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header';
-// import Footer from './footer';
+import Footer from './footer';
 
 
 export default function Layout(props) {
@@ -8,7 +8,7 @@ export default function Layout(props) {
     <div>
       <Header/>
       {props.children}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
