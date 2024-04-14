@@ -4,18 +4,21 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    gap: 20px;
     .description{
         color: white;
         line-height: 10px;
-        margin-top: 15px;
+        margin-top: 30px;
         h3{
-            line-height: 30px;
             color: rgb(245, 220, 0);
+        }
+        p{
+            line-height: 40px;
         }
     }
 }
 .divide{
+    display: flex;
+    justify-content: center;
     hr{
         width: 80%;
         border: #9c9b9b solid 1px;
@@ -25,7 +28,6 @@
 .second-group{
     display: flex;
     justify-content: center;
-    gap: 10px;
     margin-top: 30px;
     .description{
         color: white;
@@ -34,40 +36,35 @@
         h2{
             width: 140px;
         }
-        p{
-            line-height: 5px;
-        }
+
         h3{
-            line-height: 20px;
+            line-height: 25px;
             color: rgb(245, 220, 0);
         }
     }
     .image2{
-        margin-top: 20px;
+        margin-top: 10px;
     }
     }
     .third-group{
         display: flex;
         justify-content: center;
-        gap: 10px;
         margin-top: 30px;
         .description{
             color: white;
-            line-height: 25px;
+            // line-height: 25px;
             margin-top: 15px;
             h2{
                 width: 140px;
             }
-            p{
-                line-height: 5px;
-            }
+
             h3{
-                line-height: 20px;
+                line-height: 25px;
                 color: rgb(245, 220, 0);
             }
         }
         .image3{
-            margin-top: 20px;
+            margin-top: 10px;
         }
         }
         .fourth-group{
@@ -76,37 +73,38 @@
             margin-top: 30px;
             .description{
                 color: white;
-                line-height: 25px;
                 margin-top: 15px;
+                margin-left: 10px;
                 h2{
                     width: 140px;
                 }
-                p{
-                    line-height: 5px;
-                }
+
                 h3{
-                    line-height: 20px;
+                    line-height: 25px;
                     color: rgb(245, 220, 0);
                 }
+            }
+            .image4{
+                margin-left: -20px;
             }
             }
             .fifth-group{
                 display: flex;
                 justify-content: center;
                 margin-top: 30px;
-                
                 .description{
                     color: white;
-                    line-height: 25px;
                     margin-top: 15px;
-                    p{
-                        line-height: 5px;
-                    }
+                    padding-left: 20px;
+
                     h3{
-                        line-height: 20px;
+                        line-height: 25px;
                         color: rgb(245, 220, 0);
                     }
                 } 
+                .image5{
+                   margin-left: -40px;
+                }
                 }
                 .form-container{
                     display: flex;

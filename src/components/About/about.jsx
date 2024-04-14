@@ -5,7 +5,7 @@ const about = () => {
   return (
     <div>
       <div className="about1">
-      <h2>Welcome to Rental.Dr!</h2>
+      <h2>Welcome to Rental.Dr</h2>
       <p>
         At Rental.Dr, we believe in making your travel experience as seamless
         and enjoyable as possible. Whether you're embarking on a business trip,

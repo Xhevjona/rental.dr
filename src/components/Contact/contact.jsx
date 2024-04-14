@@ -87,6 +87,12 @@ const Contact = () => {
             <p>vincensi_18dr@hotmail.com</p>
           </div>
         </div>
+        <div className="form-text">
+        <h5>
+          FOR MORE INFORMATION ABOUT OUR SERVICES,PLEASE DO NOT HESITATE TO SEND
+          US A MESSAGE.
+        </h5>
+      </div>
         <div className="right">
           <div className="form-container">
             <form className="form" ref={form} onSubmit={sendEmail}>

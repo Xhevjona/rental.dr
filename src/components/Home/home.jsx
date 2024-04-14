@@ -79,7 +79,7 @@ const Home = () => {
           <h3>35€/Day</h3>
         </div>
         <div className="image1">
-          <img src={Audi} width={240} height={170} />
+          <img src={Audi} width={190} height={135} />
         </div>
       </div>
       <div className="divide">
@@ -93,7 +93,7 @@ const Home = () => {
           <h3>40€/Day</h3>
         </div>
         <div className="image2">
-          <img src={Golf} width={250} height={160} />
+          <img src={Golf} width={190} height={120} />
         </div>
       </div>
       <div className="divide">
@@ -107,7 +107,7 @@ const Home = () => {
           <h3>40€/Day</h3>
         </div>
         <div className="image3">
-          <img src={Golf} width={250} height={160} />
+          <img src={Golf} width={190} height={120} />
         </div>
       </div>
       <div className="divide">
@@ -120,7 +120,7 @@ const Home = () => {
           <h3>40€/Day</h3>
         </div>
         <div className="image4">
-          <img src={Jetta} width={270} height={160} />
+          <img src={Jetta} width={220} height={140} />
         </div>
       </div>
       <div className="divide">
@@ -135,7 +135,7 @@ const Home = () => {
           <h3>60€/Day</h3>
         </div>
         <div className="image5">
-          <img src={Passat} width={250} height={190} />
+          <img src={Passat} width={230} height={190} />
         </div>
       </div>
       <div className="form-text">
@@ -143,7 +143,7 @@ const Home = () => {
           FOR MORE INFORMATION ABOUT OUR SERVICES,PLEASE DO NOT HESITATE TO SEND
           US A MESSAGE.
         </h5>
-      </div>
+      </div> 
       <div className="form-container">
         <form className="form" ref={form} onSubmit={sendEmail}>
           <div className="name">
