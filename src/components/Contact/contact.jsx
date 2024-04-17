@@ -17,12 +17,12 @@ const Contact = () => {
     e.preventDefault();
     if (validateForm()) {
       emailjs
-        .sendForm(
-          "service_cle6h3x",
-          "template_y7mt1pd",
-          e.target,
-          "JRwxi7mWdOU58RcWY"
-        )
+      .sendForm(
+        "service_iz3pcuw",
+        "template_y7mt1pd",
+        e.target,
+        "JRwxi7mWdOU58RcWY"
+      )
         .then(
           (result) => {
             setIsSentSuccessfully(true);

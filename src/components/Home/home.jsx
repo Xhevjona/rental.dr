@@ -32,7 +32,7 @@ const Home = () => {
     if (validateForm()) {
       emailjs
         .sendForm(
-          "service_cle6h3x",
+          "service_iz3pcuw",
           "template_y7mt1pd",
           e.target,
           "JRwxi7mWdOU58RcWY"
@@ -88,7 +88,7 @@ const Home = () => {
           <p>1.9 Manual</p>
           <h3>35€/Day</h3>
         </div>
-        <div className="image1" data-aos="fade-left" data-aos-duration="1400">
+        <div className="image1" alt="car" data-aos="fade-left" data-aos-duration="1400">
           <img src={Audi} width={190} height={135} />
         </div>
       </div>
@@ -102,7 +102,7 @@ const Home = () => {
           <p>1.6 Manual</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image2" data-aos="fade-left" data-aos-duration="1400">
+        <div className="image2" alt="car" data-aos="fade-left" data-aos-duration="1400">
           <img src={Golf} width={190} height={120} />
         </div>
       </div>
@@ -116,7 +116,7 @@ const Home = () => {
           <p>2.0 Manual</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image3" data-aos="fade-left" data-aos-duration="1400">
+        <div className="image3" alt="car" data-aos="fade-left" data-aos-duration="1400">
           <img src={Golf} width={190} height={120} />
         </div>
       </div>
@@ -129,7 +129,7 @@ const Home = () => {
           <p>2.5 Automatic</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image4" data-aos="fade-left" data-aos-duration="1400">
+        <div className="image4" alt=" " data-aos="fade-left" data-aos-duration="1400">
           <img src={Jetta} width={220} height={140} />
         </div>
       </div>
@@ -144,7 +144,7 @@ const Home = () => {
           <p>2.5 Automatic</p>
           <h3>60€/Day</h3>
         </div>
-        <div className="image5" data-aos="fade-left" data-aos-duration="1400">
+        <div className="image5" alt="" data-aos="fade-left" data-aos-duration="1400">
           <img src={Passat} width={230} height={190} />
         </div>
       </div>
