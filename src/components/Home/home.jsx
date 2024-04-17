@@ -90,7 +90,7 @@ const Home = () => {
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <h2>Audi A3 2007</h2>
+          <h2>Audi A3 2005</h2>
           <p>1.9 Manual</p>
           <h3>35€/Day</h3>
         </div>
