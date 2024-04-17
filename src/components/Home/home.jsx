@@ -5,15 +5,15 @@ import Golf from "../Image/golf6.png";
 import Jetta from "../Image/jetta.png";
 import Passat from "../Image/passat.png";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 AOS.init({
-  // duration: 1000,
   delay: 200,
-  easing: 'ease-in-out',
+  easing: "ease-in-out",
   mirror: false,
-  once: true, 
+  once: true,
 });
 
 const Home = () => {
@@ -26,7 +26,9 @@ const Home = () => {
     subject: "",
     message: "",
   });
-
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  }; 
   const sendEmail = (e) => {
     e.preventDefault();
     if (validateForm()) {
@@ -83,77 +85,135 @@ const Home = () => {
   return (
     <div>
       <div className="first-group">
-        <div className="description"  data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="description"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h2>Audi A3 2007</h2>
           <p>1.9 Manual</p>
           <h3>35€/Day</h3>
         </div>
-        <div className="image1" alt="car" data-aos="fade-left" data-aos-duration="1400">
-          <img src={Audi} width={190} height={135} />
-        </div>
+        <Link to="/audi-a3">
+          {" "}
+          <div
+            className="image1"
+            alt="car"
+            data-aos="fade-left"
+            data-aos-duration="1400"
+          >
+            <img src={Audi} width={190} height={135} alt="first-group" onClick={scrollToTop} />
+          </div>
+        </Link>
       </div>
+
       <div className="divide">
         <hr />
       </div>
 
       <div className="second-group">
-        <div className="description" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="description"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h2>Volkswagen Golf VI 2009</h2>
           <p>1.6 Manual</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image2" alt="car" data-aos="fade-left" data-aos-duration="1400">
-          <img src={Golf} width={190} height={120} />
-        </div>
+        <Link to="/volkswagen-golf-1.6">
+          <div
+            className="image2"
+            alt="car"
+            data-aos="fade-left"
+            data-aos-duration="1400"
+          >
+            <img src={Golf} width={190} height={120} onClick={scrollToTop} alt="second-group" />
+          </div>
+        </Link>
       </div>
       <div className="divide">
         <hr />
       </div>
 
       <div className="third-group">
-        <div className="description" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="description"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h2>Volkswagen Golf VI 2009</h2>
           <p>2.0 Manual</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image3" alt="car" data-aos="fade-left" data-aos-duration="1400">
-          <img src={Golf} width={190} height={120} />
-        </div>
+        <Link to="/volkswagen-golf-2.0">
+          <div
+            className="image3"
+            alt="car"
+            data-aos="fade-left"
+            data-aos-duration="1400"
+          >
+            <img src={Golf} width={190} height={120} onClick={scrollToTop} alt="third-group" />
+          </div>
+        </Link>
       </div>
       <div className="divide">
         <hr />
       </div>
       <div className="fourth-group">
-        <div className="description" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="description"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h2>Volkswagen Jetta 2010</h2>
           <p>2.5 Automatic</p>
           <h3>40€/Day</h3>
         </div>
-        <div className="image4" alt=" " data-aos="fade-left" data-aos-duration="1400">
-          <img src={Jetta} width={220} height={140} />
-        </div>
+        <Link to="/volkswagen-jetta">
+          {" "}
+          <div
+            className="image4"
+            alt=" "
+            data-aos="fade-left"
+            data-aos-duration="1400"
+          >
+            <img src={Jetta} width={220} height={140} onClick={scrollToTop} alt="fourth-group"/>
+          </div>
+        </Link>
       </div>
       <div className="divide">
         <hr />
       </div>
       <div className="fifth-group">
-        <div className="description" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="description"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h2>
             Volkswagen <br /> Passat Premium <br /> 2013
           </h2>
           <p>2.5 Automatic</p>
           <h3>60€/Day</h3>
         </div>
-        <div className="image5" alt="" data-aos="fade-left" data-aos-duration="1400">
-          <img src={Passat} width={230} height={190} />
-        </div>
+        <Link to="/volkswagen-passat-premium-plus">
+          <div
+            className="image5"
+            alt=""
+            data-aos="fade-left"
+            data-aos-duration="1400"
+          >
+            <img src={Passat} width={230} height={190} onClick={scrollToTop} alt="fifth-group" />
+          </div>
+        </Link>
       </div>
       <div className="form-text">
         <h5>
           FOR MORE INFORMATION ABOUT OUR SERVICES,PLEASE DO NOT HESITATE TO SEND
           US A MESSAGE.
         </h5>
-      </div> 
+      </div>
       <div className="form-container">
         <form className="form" ref={form} onSubmit={sendEmail}>
           <div className="name">

@@ -1,0 +1,36 @@
+@media screen and (max-width: 520px) {
+    .container {
+      display: block;
+      .golf16 {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .details {
+        color: #fff;
+        text-align: start;
+        width: 350px;
+        margin: auto;
+        h2 {
+          text-align: center;
+          line-height: 40px;
+          color: #f3db00;
+        }
+      }
+    }
+    .book {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      button {
+        padding: 10px 28px;
+        border: 1px solid #f3db00;
+        background-color: transparent;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 15px;
+      }
+    }
+  }
+  
