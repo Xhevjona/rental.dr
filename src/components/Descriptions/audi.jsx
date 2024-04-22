@@ -18,7 +18,7 @@ const audi = () => {
           <img src={Audi} width={250} height={200} alt="fifth-group"  />
         </div>
         <div className="details">
-          <h2>Audi A3</h2>
+          <h2>Audi A3</h2> 
           <p>
             Elevate your driving experience with the Audi A3, a compact luxury
             sedan that seamlessly combines style, comfort, and performance.

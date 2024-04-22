@@ -84,6 +84,7 @@ const Home = () => {
 
   return (
     <div>
+      <div className="container1">
       <div className="first-group">
         <div
           className="description"
@@ -91,7 +92,7 @@ const Home = () => {
           data-aos-duration="1000"
         >
           <h2>Audi A3 2005</h2>
-          <p>1.9 Manual</p>
+          <p>1.9 Manual</p> 
           <h3>35€/Day</h3>
         </div>
         <Link to="/audi-a3">
@@ -132,10 +133,11 @@ const Home = () => {
           </div>
         </Link>
       </div>
+      </div>
       <div className="divide">
         <hr />
       </div>
-
+<div className="container2">
       <div className="third-group">
         <div
           className="description"
@@ -160,6 +162,7 @@ const Home = () => {
       <div className="divide">
         <hr />
       </div>
+
       <div className="fourth-group">
         <div
           className="description"
@@ -182,9 +185,11 @@ const Home = () => {
           </div>
         </Link>
       </div>
+      </div>
       <div className="divide">
         <hr />
       </div>
+      <div className="container3">
       <div className="fifth-group">
         <div
           className="description"
@@ -207,6 +212,7 @@ const Home = () => {
             <img src={Passat} width={230} height={190} onClick={scrollToTop} alt="fifth-group" />
           </div>
         </Link>
+      </div>
       </div>
       <div className="form-text">
         <h5>
