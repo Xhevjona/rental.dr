@@ -83,7 +83,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="body">
       <div className="container1">
       <div className="first-group">
         <div
