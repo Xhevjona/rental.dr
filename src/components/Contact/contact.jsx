@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "../Contact/contact.scss";
 import emailjs from "@emailjs/browser";
+import Img from "../Image/contact.jpg"
 
 const Contact = () => {
   const form = useRef();
@@ -17,12 +18,12 @@ const Contact = () => {
     e.preventDefault();
     if (validateForm()) {
       emailjs
-      .sendForm(
-        "service_iz3pcuw",
-        "template_y7mt1pd",
-        e.target,
-        "JRwxi7mWdOU58RcWY"
-      )
+        .sendForm(
+          "service_uccvnup",
+          "template_onlljnh",
+          e.target,
+          "hVmtqP_aAaZxiKyQg"
+        )
         .then(
           (result) => {
             setIsSentSuccessfully(true);
@@ -70,104 +71,107 @@ const Contact = () => {
       <div className="contact-title">
         <h2>Contact Us</h2>
       </div>
-      <div className="container">
-        <div className="left">
-          <div className="block1">
-            {" "}
-            <h4>Address</h4>
-            <p>Durres, Albania</p>
-          </div>
-          <div className="block2">
-            <h4>Phone</h4>
-            <p>+355 67 606 0700 </p>
-          </div>
-          <div className="block3">
-            {" "}
-            <h4>Email</h4>
-            <p>vincensi_18dr@hotmail.com</p>
-          </div>
-        </div>
-        <div className="form-text">
-        <h5>
-          FOR MORE INFORMATION ABOUT OUR SERVICES,PLEASE DO NOT HESITATE TO SEND
-          US A MESSAGE.
-        </h5>
-      </div>
-        <div className="right">
-          <div className="form-container">
-            <form className="form" ref={form} onSubmit={sendEmail}>
-              <div className="name">
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className="firstName"
-                  tabIndex="1"
-                  placeholder="Name"
-                />
-              </div>
-              <div className="feedback">
-                {" "}
-                {errors.name && <p>{errors.name}</p>}{" "}
-              </div>
-              <div className="form-email">
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  id="email"
-                  className="form-email"
-                  placeholder="Email"
-                  tabIndex="2"
-                />
-              </div>
-              <div className="feedback">
-                {" "}
-                {errors.email && <p>{errors.email}</p>}
-              </div>
-              <div className="subject">
-                <input
-                  type="text"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleInputChange}
-                  className="firstName"
-                  tabIndex="3"
-                  placeholder="Subject"
-                />
-              </div>
-              <div className="feedback">
-                {" "}
-                {errors.subject && <p>{errors.subject}</p>}
-              </div>
-              <div className="message">
-                <textarea
-                  placeholder="Message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  className="message"
-                  name="message"
-                />
-              </div>
-              <div className="feedback">
-                {" "}
-                {errors.message && <p>{errors.message}</p>}
-              </div>
-              <button type="submit" className="send">
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          {isSentSuccessfully && (
-            <div className="success-message">
-              <p> Form submitted successfully!</p>
+      <div className="contact-container">
+        <img src={Img} width={400} height={500} alt="contact form" />
+        <div className="container">
+          <div className="left">
+            <div className="block1">
+              {" "}
+              <h4>Address</h4>
+              <p>Durres, Albania</p>
             </div>
-          )}
+            <div className="block2">
+              <h4>Phone</h4>
+              <p>+355 67 606 0700 </p>
+            </div>
+            <div className="block3">
+              {" "}
+              <h4>Email</h4>
+              <p>rentaldr88@gmail.com</p>
+            </div>
+          </div>
+          <div className="form-text">
+            <h5>
+              FOR MORE INFORMATION ABOUT OUR SERVICES,PLEASE DO NOT HESITATE TO
+              SEND US A MESSAGE.
+            </h5>
+          </div>
+          <div className="right">
+            <div className="form-container">
+              <form className="form" ref={form} onSubmit={sendEmail}>
+                <div className="name">
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="firstName"
+                    tabIndex="1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div className="feedback">
+                  {" "}
+                  {errors.name && <p>{errors.name}</p>}{" "}
+                </div>
+                <div className="form-email">
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    id="email"
+                    className="form-email"
+                    placeholder="Email"
+                    tabIndex="2"
+                  />
+                </div>
+                <div className="feedback">
+                  {" "}
+                  {errors.email && <p>{errors.email}</p>}
+                </div>
+                <div className="subject">
+                  <input
+                    type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    className="firstName"
+                    tabIndex="3"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div className="feedback">
+                  {" "}
+                  {errors.subject && <p>{errors.subject}</p>}
+                </div>
+                <div className="message">
+                  <textarea
+                    placeholder="Message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className="message"
+                    name="message"
+                  />
+                </div>
+                <div className="feedback">
+                  {" "}
+                  {errors.message && <p>{errors.message}</p>}
+                </div>
+                <button type="submit" className="send">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            {isSentSuccessfully && (
+              <div className="success-message">
+                <p> Form submitted successfully!</p>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

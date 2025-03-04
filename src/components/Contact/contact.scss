@@ -5,6 +5,14 @@
         margin-top: 100px;
     }
 }
+.contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    img{
+        margin-top: 15vh;
+    }
+}
 
 .left{
     display: block;
@@ -13,7 +21,7 @@
     text-align: center;
     margin-top: 10px;
     h4{
-        color: #ffb30e;
+        color: #b30808;
 
     }
     p{
@@ -25,7 +33,7 @@
     text-align: center;
     margin-top: 15px;
     h4{
-        color: #ffb30e;
+        color: #b30808;
 
     }
     p{
@@ -37,7 +45,7 @@
     margin-top: 15px;
     text-align: center;
     h4{
-        color: #ffb30e;
+        color: #b30808;
     }
     p{
         color: #fff;
@@ -60,7 +68,7 @@
     }
   }
   input {
-    width: 270px;
+    width: 350px;
     height: 35px;
     background-color: transparent;
     border: 1px solid #beb8b8;
@@ -72,7 +80,7 @@
   }
 
   textarea {
-    width: 270px;
+    width: 350px;
     height: 70px;
     background-color: transparent;
     border: 1px solid #beb8b8;
@@ -89,7 +97,7 @@
   }
   .send {
     padding: 10px 20px;
-    background-color: #d3a526;
+    background-color: #b30808;
     border: none;
     border-radius: 10px;
     color: #ffffff;
@@ -102,13 +110,44 @@
   }
   button:hover {
     background-color: #0a0a0a;
-    color: #eeca00;
+    color: #b30808;
     border: 1px solid #ffffff;
   }
 .feedback {
   p {
-    color: #ffd30e;
+    color: #b30808;
     font-size: 13px;
     margin-top: 5px;
   }
+}
+
+@media screen and (max-width:1024px) {
+    .contact-container{
+        gap: 100px;
+        img{
+            margin-top: 20vh;
+            width: 300px;
+            height: 400px;
+        }
+    }
+    input {
+        width: 300px;
+      }
+      textarea {
+        width: 300px;
+      }
+}
+
+@media screen and (max-width:767px) {
+    .contact-container{
+        img{
+           display: none;
+        }
+    }
+    input {
+        width: 250px;
+      }
+      textarea {
+        width: 250px;
+      }
 }

@@ -40,7 +40,17 @@ function Header() {
                 Home
               </NavLink>
             </li>
-            
+            <li className="nav-item" onClick={scrollToTop}>
+              <NavLink
+                exact="true"
+                to="/fleet"
+                activeclassname="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Fleet
+              </NavLink>
+            </li>
             <li className="nav-item" onClick={scrollToTop}>
               <NavLink
                 exact="true"
