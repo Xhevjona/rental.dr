@@ -33,7 +33,7 @@ const Fleet = () => {
           <img src={Car1} width={350} height={250} alt="fleet cars" />
           <div className="car-desc">
             <h1>AUDI A3 2005</h1>
-            <h2>2.2 DIESEL | MANUAL | 4+1</h2>
+            <h2>1.9 DIESEL | MANUAL | 4+1</h2>
             <p>
               Experience a smooth and efficient ride with the Audi A3 2005 — a
               reliable hatchback featuring a 2.2L diesel engine and manual
@@ -82,8 +82,8 @@ const Fleet = () => {
       <div className="cars">
         <img src={Car4} width={350} height={270} alt="fleet cars" />
         <div className="car-desc">
-          <h1>VOLKSWAGEN PASSAT 2014</h1>
-          <h2>2.5 PETROL-GAS | AUTOMATIC | 4+1</h2>
+          <h1>VOLKSWAGEN PASSAT 2015</h1>
+          <h2>1.8 PETROL | AUTOMATIC | 4+1</h2>
           <p>
             The Volkswagen Passat 2014 blends comfort, performance, and style.
             Powered by a 2.5L petrol-gas engine with automatic transmission, it
